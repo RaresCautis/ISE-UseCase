@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_llIi8GlEEeut_5SLRGDacQ" name="Test">
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_lsa2sGlEEeut_5SLRGDacQ">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_1maOMGlEEeut_5SLRGDacQ" name="Module Leader"/>
+  <packagedElement xmi:type="uml:Package" xmi:id="_d_MP0GlFEeut_5SLRGDacQ" name="Misconduct Management System">
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_sETT4GlGEeut_5SLRGDacQ" name="Provide Case"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_3TGuoGlGEeut_5SLRGDacQ" name="Student Enrollment"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_25ccAGlHEeut_5SLRGDacQ" name="Forward to &quot;home&quot;"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_EvJnkGlIEeut_5SLRGDacQ" name="Check Previous Offences"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_H5pNoGlIEeut_5SLRGDacQ" name="Interview"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_I6ExAGomEeuik-_wCl1dRQ" name="Close Case"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_VNts4GomEeuik-_wCl1dRQ" name="Update"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_grFvIGomEeuik-_wCl1dRQ" name="&lt;&lt;include>>" client="_I6ExAGomEeuik-_wCl1dRQ" supplier="_VNts4GomEeuik-_wCl1dRQ"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_0UG9IGomEeuik-_wCl1dRQ" name="Search"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_N72MUGonEeuik-_wCl1dRQ" name="&lt;&lt;include>>" client="_EvJnkGlIEeut_5SLRGDacQ" supplier="_0UG9IGomEeuik-_wCl1dRQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_usznMGlGEeut_5SLRGDacQ" memberEnd="_us01UmlGEeut_5SLRGDacQ _us1cYGlGEeut_5SLRGDacQ">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_us01UGlGEeut_5SLRGDacQ" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_us01UWlGEeut_5SLRGDacQ" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_us01UmlGEeut_5SLRGDacQ" name="provide case" type="_sETT4GlGEeut_5SLRGDacQ" association="_usznMGlGEeut_5SLRGDacQ"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_us1cYGlGEeut_5SLRGDacQ" name="module leader" type="_1maOMGlEEeut_5SLRGDacQ" association="_usznMGlGEeut_5SLRGDacQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_2Go7gGlGEeut_5SLRGDacQ" name="Student"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_UDYcEGlHEeut_5SLRGDacQ" name="Enroll" memberEnd="_UDZDIWlHEeut_5SLRGDacQ _UDZDImlHEeut_5SLRGDacQ">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_UDYcEWlHEeut_5SLRGDacQ" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_UDZDIGlHEeut_5SLRGDacQ" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_UDZDIWlHEeut_5SLRGDacQ" name="student enrollment" type="_3TGuoGlGEeut_5SLRGDacQ" association="_UDYcEGlHEeut_5SLRGDacQ"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_UDZDImlHEeut_5SLRGDacQ" name="student" type="_2Go7gGlGEeut_5SLRGDacQ" association="_UDYcEGlHEeut_5SLRGDacQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_fb7osGlHEeut_5SLRGDacQ" name="Check" memberEnd="_fb7os2lHEeut_5SLRGDacQ _fb7otGlHEeut_5SLRGDacQ">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_fb7osWlHEeut_5SLRGDacQ" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_fb7osmlHEeut_5SLRGDacQ" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_fb7os2lHEeut_5SLRGDacQ" name="academic misconduct team" type="_aX68QGlHEeut_5SLRGDacQ" association="_fb7osGlHEeut_5SLRGDacQ"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_fb7otGlHEeut_5SLRGDacQ" name="student enrollment" type="_3TGuoGlGEeut_5SLRGDacQ" association="_fb7osGlHEeut_5SLRGDacQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_6_ymUGlHEeut_5SLRGDacQ" memberEnd="_6_ymU2lHEeut_5SLRGDacQ _6_ymVGlHEeut_5SLRGDacQ">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_6_ymUWlHEeut_5SLRGDacQ" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_6_ymUmlHEeut_5SLRGDacQ" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_6_ymU2lHEeut_5SLRGDacQ" name="academic misconduct team" type="_aX68QGlHEeut_5SLRGDacQ" association="_6_ymUGlHEeut_5SLRGDacQ"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_6_ymVGlHEeut_5SLRGDacQ" name="forward to &quot;home&quot;" type="_25ccAGlHEeut_5SLRGDacQ" association="_6_ymUGlHEeut_5SLRGDacQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_G30kQGlIEeut_5SLRGDacQ" memberEnd="_G31LUGlIEeut_5SLRGDacQ _G31LUWlIEeut_5SLRGDacQ">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_G30kQWlIEeut_5SLRGDacQ" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_G30kQmlIEeut_5SLRGDacQ" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_G31LUGlIEeut_5SLRGDacQ" name="academic misconduct team" type="_aX68QGlHEeut_5SLRGDacQ" association="_G30kQGlIEeut_5SLRGDacQ"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_G31LUWlIEeut_5SLRGDacQ" name="check previous offences" type="_EvJnkGlIEeut_5SLRGDacQ" association="_G30kQGlIEeut_5SLRGDacQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_M_4usGlIEeut_5SLRGDacQ" memberEnd="_M_5VwWlIEeut_5SLRGDacQ _M_5VwmlIEeut_5SLRGDacQ">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_M_4usWlIEeut_5SLRGDacQ" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_M_5VwGlIEeut_5SLRGDacQ" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_M_5VwWlIEeut_5SLRGDacQ" name="interview" type="_H5pNoGlIEeut_5SLRGDacQ" association="_M_4usGlIEeut_5SLRGDacQ"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_M_5VwmlIEeut_5SLRGDacQ" name="enroll" type="_2Go7gGlGEeut_5SLRGDacQ" association="_M_4usGlIEeut_5SLRGDacQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_OCgpUGlIEeut_5SLRGDacQ" memberEnd="_OChQYmlIEeut_5SLRGDacQ _OChQY2lIEeut_5SLRGDacQ">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_OChQYGlIEeut_5SLRGDacQ" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_OChQYWlIEeut_5SLRGDacQ" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_OChQYmlIEeut_5SLRGDacQ" name="interview" type="_H5pNoGlIEeut_5SLRGDacQ" association="_OCgpUGlIEeut_5SLRGDacQ"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_OChQY2lIEeut_5SLRGDacQ" name="module leader" type="_1maOMGlEEeut_5SLRGDacQ" association="_OCgpUGlIEeut_5SLRGDacQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_O0eRwGlIEeut_5SLRGDacQ" memberEnd="_O0e40mlIEeut_5SLRGDacQ _O0e402lIEeut_5SLRGDacQ">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_O0e40GlIEeut_5SLRGDacQ" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_O0e40WlIEeut_5SLRGDacQ" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_O0e40mlIEeut_5SLRGDacQ" name="academic misconduct team" type="_aX68QGlHEeut_5SLRGDacQ" association="_O0eRwGlIEeut_5SLRGDacQ"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_O0e402lIEeut_5SLRGDacQ" name="interview" type="_H5pNoGlIEeut_5SLRGDacQ" association="_O0eRwGlIEeut_5SLRGDacQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_UpsZ0GomEeuik-_wCl1dRQ" memberEnd="_UptA4WomEeuik-_wCl1dRQ _UptA4momEeuik-_wCl1dRQ">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_UpsZ0WomEeuik-_wCl1dRQ" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_UptA4GomEeuik-_wCl1dRQ" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_UptA4WomEeuik-_wCl1dRQ" name="academic misconduct team" type="_aX68QGlHEeut_5SLRGDacQ" association="_UpsZ0GomEeuik-_wCl1dRQ"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_UptA4momEeuik-_wCl1dRQ" name="close case" type="_I6ExAGomEeuik-_wCl1dRQ" association="_UpsZ0GomEeuik-_wCl1dRQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_yIG_oGomEeuik-_wCl1dRQ" name="SCO DB"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_KW0mYGonEeuik-_wCl1dRQ" memberEnd="_KW1NcmonEeuik-_wCl1dRQ _KW1Nc2onEeuik-_wCl1dRQ">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_KW1NcGonEeuik-_wCl1dRQ" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_KW1NcWonEeuik-_wCl1dRQ" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_KW1NcmonEeuik-_wCl1dRQ" name="search" type="_0UG9IGomEeuik-_wCl1dRQ" association="_KW0mYGonEeuik-_wCl1dRQ"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_KW1Nc2onEeuik-_wCl1dRQ" name="sco db" type="_yIG_oGomEeuik-_wCl1dRQ" association="_KW0mYGonEeuik-_wCl1dRQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_P7zR4GonEeuik-_wCl1dRQ" memberEnd="_P7z48GonEeuik-_wCl1dRQ _P7z48WonEeuik-_wCl1dRQ">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_P7zR4WonEeuik-_wCl1dRQ" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_P7zR4monEeuik-_wCl1dRQ" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_P7z48GonEeuik-_wCl1dRQ" name="sco db" type="_yIG_oGomEeuik-_wCl1dRQ" association="_P7zR4GonEeuik-_wCl1dRQ"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_P7z48WonEeuik-_wCl1dRQ" name="update" type="_VNts4GomEeuik-_wCl1dRQ" association="_P7zR4GonEeuik-_wCl1dRQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_aX68QGlHEeut_5SLRGDacQ" name="Academic Misconduct Team"/>
+</uml:Model>
